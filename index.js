@@ -6,7 +6,9 @@
  * @returns {number} temperature in °C
  */
 function convertToCelsius(f) {
-  // TODO
+  const celsius = (f - 32) / (9 / 5);
+  return celsius;
+  console.log(celsius);
 }
 
 /**

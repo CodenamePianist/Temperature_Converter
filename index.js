@@ -8,7 +8,6 @@
 function convertToCelsius(f) {
   const celsius = (f - 32) / (9 / 5);
   return celsius;
-  console.log(celsius);
 }
 
 /**
@@ -25,7 +24,18 @@ function convertToCelsius(f) {
  * the given Fahrenheit temperature `f`
  */
 function describeTemperature(f) {
-  // TODO
+  // Using temperature (f), write if statements for the corresponding description.
+  if (f < 32) {
+    return `very cold`;
+  } else if (f < 64) {
+    return `cold`;
+  } else if (f < 86) {
+    return `warm`;
+  } else if (f < 100) {
+    `hot`;
+  } else if (f >= 100) {
+    `very hot`;
+  }
 }
 
 /**
